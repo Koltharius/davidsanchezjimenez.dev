@@ -1,0 +1,212 @@
+{
+  "basics": {
+    "name": "David",
+    "lastName": "Sánchez Jiménez",
+    "label": "Computer Engineer",
+    "image": "https://avatars.githubusercontent.com/u/7522784?v=4",
+    "email": "dasaji92@gmail.com",
+    "phone": " +34 687 682 416",
+    "url": "https://www.davidsanchezjimenez.dev",
+    "summary": "I'm Web Developer working on Lemonade Software S.L. as Medior Software Engineer. I'm from Granada, Spain. I love participating in events as an assistant, organizer or speaker, I think it is very important to learn new technologies and meet people.",
+    "localtion": {
+      "address": "",
+      "postalCode": "",
+      "city": "Granada",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "English",
+        "fluency": "Professional working proficiency"
+      }
+    ],
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "dasaji",
+        "url": "https://www.linkedin.com/in/dasaji/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Koltharius",
+        "url": "https://github.com/Koltharius"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Lemonade Software Development",
+      "position": "Software Developer",
+      "location": "Barcelona, Spain",
+      "url": "",
+      "startDate": "2022-05-01",
+      "endDate": null,
+      "highlights": [
+        "Working on Katholiek Onderwijs Vlaanderen or ”KathOndVla” project. KathOndVla is the umbrella organization for Catholic education in Flanders, Belgium.",
+        "The goal of this project is design, develop and maintain the diferent platforms used by Catholic education schools.",
+        "In my day to day I work with Javascript, React, AngularJS, Mocha and Jenkins."
+      ],
+      "technologies": ["Javascript", "React", "AngularJS", "Mocha", "Jenkins"]
+    },
+    {
+      "company": "Nucleoo",
+      "position": "Medior Software Developer",
+      "location": "Granada, Spain",
+      "url": "https://www.nucleoo.com/es/",
+      "startDate": "2021-03-01",
+      "endDate": "2022-05-01",
+      "highlights": [
+        "Working on ”SDK, Tooling and Infrastructure” team on the Fonto project. Fonto is a web-XML-based editor that allows companies to write any type of document regardless of their particular requirements or needs.",
+        "The goal of this team is design, develop and maintain the platform used by all XML editors. Also, this team is responsible for the correct functioning of the tools provided to partners as well as the Software Development Kit used by the rest of the company’s developers.",
+        "I was part of the team in charge of migrating all the platform Javascript code to TypeScript.",
+        "In my day to day I work with Javascript, Typescript, Gatsby, Babel and Azure."
+      ],
+      "technologies": [
+        "Javascript",
+        "Typescript",
+        "Gatsby",
+        "Babel",
+        "Jest",
+        "Azure"
+      ]
+    },
+    {
+      "company": "Nucleoo",
+      "position": "Junior Software Developer",
+      "location": "Granada, Spain",
+      "url": "https://www.nucleoo.com/es/",
+      "startDate": "2019-04-01",
+      "endDate": "2021-03-01",
+      "summary": "",
+      "highlights": [
+        "I worked on a features team on the Fonto project. Fonto is a web-based XML editor that allows companies to write any type of document regardless of their particular requirements or needs.",
+        "During this period of time I participated in the design, implementation and modification of some editor functionalities according to the client’s needs.",
+        "In my day to day I worked with JavaScript and React."
+      ],
+      "technologies": ["Javascript", "React"]
+    },
+    {
+      "company": "Nucleoo",
+      "position": "Software Developer Intership",
+      "location": "Granada, Spain",
+      "url": "https://www.nucleoo.com/es/",
+      "startDate": "2018-10-01",
+      "endDate": "2019-04-01",
+      "summary": "",
+      "highlights": [
+        "During my university internship I did an onboarding to start working at Fonto project. Fonto is a web-based XML editor that allows companies to write any type of document regardless of their particular requirements or needs.",
+        "I worked on a features team and I participated in the design, implementation and modification of some editor functionalities according to the client’s needs.",
+        "In my day to day I worked with JavaScript and React."
+      ],
+      "technologies": ["Javascript", "React"]
+    },
+    {
+      "company": "Nucleoo",
+      "position": "Software Developer Intership",
+      "location": "Granada, Spain",
+      "url": "https://www.nucleoo.com/es/",
+      "startDate": "2018-07-01",
+      "endDate": "2018-08-01",
+      "summary": "",
+      "highlights": [
+        "I worked as Full-Stack developer in a project using Python, MongoDB, Elasticsearch and Angular during summer internship."
+      ],
+      "technologies": ["Python", "MongoDB", "Elasticsearch", "Angular"]
+    },
+    {
+      "company": "Colegio Oficial de Gestores Administrativos de Granada",
+      "position": "Intership Systems Administrator",
+      "location": "Granada, Spain",
+      "url": "",
+      "startDate": "2013-03-01",
+      "endDate": "2013-06-01",
+      "summary": "",
+      "highlights": [
+        "I worked as a systems administrator in my internship for the Higher Education Network and Systems Administration Certificate."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "Degree in Computer Engineering",
+      "institution": "ETSIIT - Universidad de Granada",
+      "location": "Granada, Spain",
+      "url": "https://etsiit.ugr.es/",
+      "startDate": "2013-09-01",
+      "endDate": "2019-06-01"
+    },
+    {
+      "name": "CertHE Networks and Systems Administration",
+      "institution": "IES Zaidín-Vergeles",
+      "location": "Granada, Spain",
+      "url": "https://www.ieszaidinvergeles.org/",
+      "startDate": "2011-09-01",
+      "endDate": "2013-06-01"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Web interface for indexing and searching financial texts with Elasticsearch",
+      "url": "",
+      "description": "Final Degree Project",
+      "startDate": "2019-09-01",
+      "endDate": "2020-07-01",
+      "highlights": [
+        "This work aims to develop a platform for searching and visualizing data in a Financial Corpus, understanding as Corpus an extensive and ordered set of data or texts of various kinds, such as scientific or literary, which serve as the basis for a investigation.",
+        "This solution is composed of a frontend, made with React, which communicateswith a backend, made with Express.js, through a REST API.",
+        "The backend also makes request to an Elasticsearch database.",
+        "The Elasticsearch database is hosted in AWS and contains the indexed texts of the Financial Corpus."
+      ]
+    }
+  ],
+  "extraCurricularActivities": [
+    {
+      "title": "Google Developer Group Granada",
+      "position": "Core Team Member",
+      "location": "Granada, Spain",
+      "url": "https://gdggranada.com/",
+      "startDate": "2016-11-01",
+      "endDate": "2019-11-01",
+      "highlights": [
+        "The Google Developer Groups (GDGs) are non-profit entities created with the aim of improving the technological enthusiast community and increasing the knowledge and relationships among people who are dedicated to this area. GDG Granada is the local branch of this community.",
+        "I organized numerous events and talks just for fun during this period.",
+        "In May 2018 ETSIIT awarded us a diploma for the work done during the academic year 2017/2018."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Diploma",
+      "awardDate": "2018-05-01",
+      "location": "Granada, Spain",
+      "awarder": "ETSIIT - Universidad de Granada",
+      "highlights": [
+        "For the work done during the academic year 2017/2018 with the Google Developer Group Granada."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "Frontend": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "AngularJS",
+        "Gatsby",
+        "Astro",
+        "Tailwind CSS"
+      ],
+      "Backend": ["NodeJS", "Express"],
+      "Testing": ["Mocha", "Jest", "React Testing Library", "Cypress"],
+      "CI/CD": ["Jenkins", "GitHub Actions"],
+      "Version Control": ["Git", "GitHub", "Bitbucket"]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+---
+import Section from '@/components/Section.astro';import Header from '@/components/Header.astro';import { extraCurricularActivities } from '@cv';
+---
+
+<Section title="Extracurricular Activities">
+  <ul>
+    {
+      extraCurricularActivities.map(
+        ({ title, position, location, startDate, endDate, highlights }) => {
+          const startMonth = new Date(startDate).toLocaleString('en', {
+            month: 'short',
+          });
+          const startYear = new Date(startDate).getFullYear();
+          const endMonth = new Date(endDate).toLocaleString('en', {
+            month: 'short',
+          });
+          const endYear = new Date(endDate).getFullYear();
+          const date = `${startMonth} ${startYear} - ${endMonth} ${endYear}`;
+
+          return (
+            <li>
+              <article>
+                <Header title={title} subtitle={position} date={date} location={location} />
+                <footer>
+                  <ul class="highlights">
+                    {highlights.map((highlight) => (
+                      <li>
+                        <p>{highlight}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </footer>
+              </article>
+            </li>
+          );
+        },
+      )
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+  footer {
+    flex-direction: column;
+  }
+
+  .highlights {
+    list-style: disc;
+    padding-left: 20px;
+    gap: 5px;
+  }
+
+  @media (width <= 700px) {
+    footer {
+      flex-direction: column;
+    }
+  }
+</style>

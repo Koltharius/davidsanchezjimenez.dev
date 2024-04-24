@@ -1,0 +1,45 @@
+---
+interface Props {
+  highlights: string[];
+}
+
+const { highlights } = Astro.props;
+---
+
+<footer>
+  {
+    highlights.length > 1 ? (
+      <ul class="highlights">
+        {highlights.map((highlight) => (
+          <li>
+            <p>{highlight}</p>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p>{highlights[0]}</p>
+    )
+  }
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  .highlights {
+    list-style: disc;
+    padding-left: 20px;
+    gap: 5px;
+  }
+
+  @media (width <= 700px) {
+    footer {
+      flex-direction: column;
+    }
+  }
+</style>

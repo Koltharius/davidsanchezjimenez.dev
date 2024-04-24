@@ -1,0 +1,39 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+import About from '@/components/sections/About.astro';
+import Honors from '@/components/sections/Awards.astro';
+import Education from '@/components/sections/Education.astro';
+import Experience from '@/components/sections/Experience.astro';
+import ExtraCurricular from '@/components/sections/Extracurricular.astro';
+import Hero from '@/components/sections/Hero.astro';
+import Projects from '@/components/sections/Projects.astro';
+import Skills from '@/components/sections/Skills.astro';
+---
+
+<Layout title="David Sánchez Jiménez Portfolio">
+  <main>
+    <Hero />
+    <About />
+    <Experience />
+    <Education />
+    <Projects />
+    <Skills />
+    <ExtraCurricular />
+    <Honors />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 4rem;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>

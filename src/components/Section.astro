@@ -1,0 +1,65 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+const firstThreeLetters = title && title.substring(0, 3);
+const restOfTitle = title && title.substring(3);
+---
+
+{
+  title ? (
+    <section>
+      <div class="title-container">
+        <h2>
+          <span class="accent-color">{firstThreeLetters}</span>
+          {restOfTitle}
+        </h2>
+        <hr />
+      </div>
+      <slot />
+    </section>
+  ) : (
+    <section>
+      <slot />
+    </section>
+  )
+}
+
+<style>
+  section {
+    max-width: 700px;
+    margin: 0 auto 48px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  hr {
+    flex: 1;
+    border: none;
+    height: 2px;
+    background-color: #000;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 700px) {
+    section {
+      margin-bottom: 38px;
+    }
+
+    hr {
+      margin: 0;
+    }
+  }
+</style>

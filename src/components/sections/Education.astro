@@ -1,0 +1,46 @@
+---
+import Section from '@/components/Section.astro';
+import Header from '@/components/Header.astro';
+import { education } from '@cv';
+---
+
+<Section title="Education">
+  <ul>
+    {
+      education.map(({ name, institution, location, startDate, endDate }) => {
+        const startMonth = new Date(startDate).toLocaleString('en', {
+          month: 'short',
+        });
+        const startYear = new Date(startDate).getFullYear();
+
+        const endMonth = new Date(endDate).toLocaleString('en', {
+          month: 'short',
+        });
+        const endYear = new Date(endDate).getFullYear();
+
+        const date = `${startMonth} ${startYear} - ${endMonth} ${endYear}`;
+
+        return (
+          <li>
+            <article>
+              <Header
+                title={name}
+                subtitle={institution}
+                date={date}
+                location={location}
+              />
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+</style>

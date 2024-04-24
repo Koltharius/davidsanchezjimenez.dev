@@ -1,0 +1,77 @@
+---
+interface skills {
+  frontend: string[];
+  backend: string[];
+  tools: string[];
+}
+
+import Section from '@/components/Section.astro';
+import { skills } from '@cv';
+---
+
+<Section title="Skills">
+  <ul class="categories">
+    {
+      Object.entries(skills[0]).map(([category, techs]) => (
+        <li class="category">
+          <h4>{category}:</h4>
+          <ul class="technologies">
+            {techs.map((tech) => (
+              <li class="technology">{tech}</li>
+            ))}
+          </ul>
+        </li>
+      ))
+    }
+  </ul>
+
+  <style>
+    .categories {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .category {
+      display: flex;
+      gap: 8px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .technology {
+      align-items: center;
+      background: #eee;
+      border-radius: 6px;
+      color: #777;
+      display: inline-flex;
+      font-size: 0.9rem;
+      gap: 8px;
+      padding: 0.2rem 0.6rem;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+
+    @media screen and (width <= 700px) {
+      .categories {
+        flex-direction: column;
+      }
+
+      .category {
+        display: block;
+      }
+
+      .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 4px;
+      }
+
+      .technology {
+        margin-right: 0;
+      }
+    }
+  </style>
+</Section>
