@@ -1,0 +1,76 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  date?: string;
+  location?: string;
+}
+
+const { title, subtitle, date, location } = Astro.props;
+---
+
+<header>
+  <div class="left-header">
+    <h3>{title}</h3>
+    <h4>{subtitle}</h4>
+  </div>
+  {
+    date && location && (
+      <div class="right-header">
+        <p class="accent-color">
+          <em>{location} </em>
+        </p>
+        <time>
+          <em>{date}</em>
+        </time>
+      </div>
+    )
+  }
+</header>
+
+<style>
+  h3 {
+    font-weight: 600;
+  }
+
+  h4 {
+    font-weight: 400;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+
+  .right-header,
+  .left-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .left-header {
+    align-items: flex-start;
+  }
+
+  .right-header {
+    align-items: flex-end;
+  }
+
+  time {
+    font-size: 0.85rem;
+    min-width: 102px;
+  }
+
+  @media (width <= 700px) {
+    header {
+      flex-direction: column;
+    }
+
+    .right-header,
+    .left-header {
+      align-items: flex-start;
+    }
+  }
+</style>

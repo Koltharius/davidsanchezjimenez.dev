@@ -1,0 +1,51 @@
+---
+import Section from '@/components/Section.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { work } from '@cv';
+---
+
+<Section title="Work Experience">
+  <ul>
+    {
+      work.map(
+        ({ company, position, location, startDate, endDate, highlights }) => {
+          const startMonth = new Date(startDate).toLocaleString('en', {
+            month: 'short',
+          });
+          const startYear = new Date(startDate).getFullYear();
+
+          const endMonth =
+            endDate &&
+            new Date(endDate).toLocaleString('en', {
+              month: 'short',
+            });
+          const endYear = endDate && new Date(endDate).getFullYear();
+          const date = `${startMonth} ${startYear} - ${endMonth && endYear ? `${endMonth} ${endYear}` : 'Currently'}`;
+
+          return (
+            <li>
+              <article>
+                <Header
+                  title={company}
+                  subtitle={position}
+                  date={date}
+                  location={location}
+                />
+                <Footer highlights={highlights} />
+              </article>
+            </li>
+          );
+        },
+      )
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+</style>

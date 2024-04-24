@@ -1,0 +1,33 @@
+---
+import Section from '@/components/Section.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { awards } from '@cv';
+---
+
+<Section title="Honors">
+  <ul>
+    {
+      awards.map(({ title, awardDate, awarder, location, highlights }) => {
+        const date = new Date(awardDate).toLocaleString('en', {
+          month: 'short',
+          year: 'numeric',
+        });
+
+        return (
+          <li>
+            <article>
+              <Header
+                title={title}
+                subtitle={awarder}
+                date={date}
+                location={location}
+              />
+              <Footer highlights={highlights} />
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

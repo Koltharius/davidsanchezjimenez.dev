@@ -1,0 +1,23 @@
+---
+import Section from '@/components/Section.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { projects } from '@cv';
+---
+
+<Section title="Projects">
+  <ul>
+    {
+      projects.map(({ title, description, highlights }) => {
+        return (
+          <li>
+            <article>
+              <Header title={title} subtitle={description} />
+              <Footer highlights={highlights} />
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
