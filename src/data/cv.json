@@ -7,7 +7,7 @@
     "email": "dasaji92@gmail.com",
     "phone": " +34 687 682 416",
     "url": "https://www.davidsanchezjimenez.dev",
-    "summary": "I'm Web Developer working on Lemonade Software S.L. as Medior Software Engineer. I'm from Granada, Spain. I love participating in events as an assistant, organizer or speaker, I think it is very important to learn new technologies and meet people.",
+    "summary": "Hi, I'm David Sánchez Jiménez, I'm from Granada, Spain and I'm working in Legit.Health as Frontend Developer. I love participating in events as an assistant, organizer or speaker, I think it is very important to learn new technologies and meet people.",
     "localtion": {
       "address": "",
       "postalCode": "",
@@ -40,12 +40,26 @@
   },
   "work": [
     {
+      "company": "Legit.Health",
+      "position": "Frontend Developer",
+      "location": "Bilbao, Spain",
+      "url": "https://legit.health/",
+      "startDate": "2024-06-01",
+      "endDate": null,
+      "highlights": [
+        "Working on Legit.Health company. Legit.Health is the Revolutionary Clinical Data and Communication tool for Next-generation dermatologists that triples the empowerment of patients.",
+        "Legit.Health assists doctors in making more accurate diagnoses and treatment decisions. It also aids with routine tasks such as follow-up consultations, enabling doctors to identify potential problems more quickly and accurately. Additionally, Legit.Health supports administrative tasks like scheduling appointments and managing medical records, thereby freeing up time for healthcare providers to focus on patient care.",
+        "In my day to day I work with Typescript, React, Next.js."
+      ],
+      "technologies": ["Typescript", "React", "Next.js"]
+    },
+    {
       "company": "Lemonade Software Development",
       "position": "Software Developer",
       "location": "Barcelona, Spain",
       "url": "",
       "startDate": "2022-05-01",
-      "endDate": null,
+      "endDate": "2024-06-01",
       "highlights": [
         "Working on Katholiek Onderwijs Vlaanderen or ”KathOndVla” project. KathOndVla is the umbrella organization for Catholic education in Flanders, Belgium.",
         "The goal of this project is design, develop and maintain the diferent platforms used by Catholic education schools.",
@@ -198,7 +212,7 @@
         "JavaScript",
         "TypeScript",
         "React",
-        "AngularJS",
+        "Next.js",
         "Gatsby",
         "Astro",
         "Tailwind CSS"
