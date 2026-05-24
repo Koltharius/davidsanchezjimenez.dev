@@ -16,7 +16,7 @@ const { city, region } = localtion;
 const SOCIAL_ICONS = {
   GitHub,
   LinkedIn,
-};
+} as const;
 ---
 
 <Section>
@@ -63,7 +63,11 @@ const SOCIAL_ICONS = {
         }
         {
           profiles.map(({ network, url, username }) => {
-            const Icon = SOCIAL_ICONS[network];
+            if (!(network in SOCIAL_ICONS)) {
+              return null;
+            }
+
+            const Icon = SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS];
 
             return (
               <a
