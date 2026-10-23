@@ -2,7 +2,6 @@
   "name": "david-sanchez-jimenez-portfolio",
   "type": "module",
   "author": "David Sanchez Jimenez",
-  "email": "REDACTED",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",

@@ -36,32 +36,6 @@ const SOCIAL_ICONS = {
       </span>
       <footer>
         {
-          email && (
-            <a
-              href={`mailto:${email}`}
-              title={`Send email to ${name} at ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Mail />
-              <span class="data">{email}</span>
-            </a>
-          )
-        }
-        {
-          phone && (
-            <a
-              href={`tel:${phone}`}
-              title={`Call ${name} on ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Phone />
-              <span class="data">{phone}</span>
-            </a>
-          )
-        }
-        {
           profiles.map(({ network, url, username }) => {
             if (!(network in SOCIAL_ICONS)) {
               return null;
